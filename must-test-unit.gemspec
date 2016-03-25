@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["a7madx7"]
   spec.email         = ["ahmad.hamdi.emara@gmail.com"]
 
-  spec.summary       = %q{Adds the must method to the Test::Unit::TestCase class}
-  spec.description   = %q{As soon as you install this gem, you'll get the much more readable must 'do something' functionality which will translate to test_do_something}
+  spec.summary       = %q{Adds the must method to the Test::Unit::TestCase class after you require 'must'}
+  spec.description   = %q{As soon as you install this gem, you'll get the much more readable must 'do something' functionality which will translate to test_do_something but you'll have first to require 'must'}
   spec.homepage      = "http://rubygems.org/gems/must-test-unit"
   spec.license       = "MIT"
 

@@ -1,4 +1,4 @@
-# Must::Test::Unit
+# require 'must'
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/must/test/unit`. To experiment with that code, run `bin/console` for an interactive prompt.
 
@@ -22,6 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
+first you'll have to require 'must'
 Just use this method as you would use any other Test::Unit::TestCase method
 Example:
 must 'return not found if user is not found' do

@@ -1,12 +1,11 @@
+# encoding: utf-8
 # Ruby Dose Facebook Page
 # https://www.facebook.com/ruby.dose
 
-require 'must/test/unit/version.rb'
-require 'test/unit'
+require 'must/test/unit/version'
 
-
-class Test::Unit::TestCase
-  def self.must(name, &block)
+module Must::Test::Unit
+  def must(name, &block)
     # convert "any method description" to any_method_description
     test_name = "test_#{name.gsub(/\s+/, '_')}".to_sym
 
@@ -25,3 +24,9 @@ class Test::Unit::TestCase
     end
   end
 end
+
+require 'minitest/autorun'
+Minitest::Test.extend(Must::Test::Unit)
+
+require 'test/unit'
+Test::Unit::TestCase.extend(Must::Test::Unit)

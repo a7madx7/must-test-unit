@@ -1,11 +1,12 @@
-require 'test_helper'
-
-class Must::Test::UnitTest < Minitest::Test
-  def test_that_it_has_a_version_number
-    refute_nil ::Must::Test::Unit::VERSION
+load '../test_helper.rb'
+# require 'minitest/autorun'
+class MustMiniTest < Minitest::Test
+  must 'evaluate to true' do
+    assert true
   end
-
-  def test_it_does_something_useful
-    assert false
+end
+class MustTest < Test::Unit::TestCase
+  must 'evaluate to true' do
+    assert true
   end
 end
